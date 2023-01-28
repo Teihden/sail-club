@@ -1,6 +1,6 @@
 # Project "Yacht club 'Under the Sail'"
 [![CI](https://github.com/Teihden/layout-designer-project-58/actions/workflows/CI.yml/badge.svg)](https://github.com/Teihden/layout-designer-project-58/actions/workflows/CI.yml)
-[![Github Pages](https://github.com/Teihden/sail-club/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Teihden/sail-club/actions/workflows/pages/pages-build-deployment)
+[![pages-build-deployment](https://github.com/Teihden/sail-club/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Teihden/sail-club/actions/workflows/pages/pages-build-deployment)
 
 
 ## Deployment to surge
