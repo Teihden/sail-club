@@ -20,5 +20,5 @@ make install
 make lint
 
 # 
-make deploy
+# make deploy
 ```

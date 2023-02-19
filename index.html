@@ -16,11 +16,38 @@
   <meta name="theme-color" content="#fdfdfd">
 </head>
 
-<body>
+<body class="page">
 
   <header class="page-header">
+    <div class="services">
+      <div class="services-content">
+        <a class="location" href="#no_scroll">Сочи</a>
+        <p class="caption">Тема</p>
+        <ul class="theme-switcher-list">
+          <li class="theme-switcher-item">
+            <button class="theme-button-dark" type="button">
+              <span class="visually-hidden">Темная тема</span>
+            </button>
+          </li>
+          <li class="theme-switcher-item">
+            <button class="theme-button-light active" type="button">
+              <span class="visually-hidden">Светлая тема</span>
+            </button>
+          </li>
+        </ul>
+        <p class="caption">Шрифт</p>
+        <ul class="fonts-list">
+          <li class="fonts-item">
+            <button class="font-button-sans-serif active" type="button">А</button>
+          </li>
+          <li class="fonts-item">
+            <button class="font-button-serif" type="button">А</button>
+          </li>
+        </ul>
+      </div>
+    </div>
     <nav class="header-navigation">
-      <a class="header-logo">
+      <a class="header-logo-link">
         <img class="header-logo-image" src="img/logo.svg" width="64" height="68" alt="Логотип яхт-клуба «Под парусом».">
       </a>
       <ul class="header-navigation-list">
@@ -55,7 +82,7 @@
       <img class="hero-banner" src="img/hero-banner.jpg" width="1170" height="466" alt="Яхта на фоне солнечного неба и скал.">
     </section>
 
-    <section class="blog blog-crew">
+    <article class="blog blog-crew short">
       <div class="blog-column">
         <p class="blog-duration">
           <time datetime="2021-10-20">20 октября</time>
@@ -64,11 +91,12 @@
         </p>
         <h2 class="blog-title title-decoration">Стань частью команды</h2>
         <p class="blog-description">Если вы давно хотели попробовать себя в яхтинге – сейчас самое лучшее время! Мы набираем команду будущих шкиперов. За 6 вы станете настоящим капитаном и уже в следующем сезоне сможете самостоятельно выйти в море!</p>
+        <button class="button-more" type="button">Читать дальше</button>
       </div>
       <img class="blog-image" src="img/man-on-boat.jpg" width="600" height="262" alt="Человек на борту яхты смотрит в бинокль.">
-    </section>
+    </article>
 
-    <section class="blog blog-event">
+    <article class="blog blog-event short">
       <div class="blog-column">
         <p class="blog-duration">
           <time datetime="2021-07-16">16 июля</time>
@@ -77,17 +105,33 @@
         </p>
         <h2 class="blog-title title-decoration">Рожденные в воде</h2>
         <p class="blog-description">Подарите детям настоящее приключение! День с морскими пиратами на корабле – это лучшая команда, веселые аниматоры, игры, соревнования, работа в команде и, конечно, море!</p>
+        <button class="button-more" type="button">Читать дальше</button>
       </div>
       <img class="blog-image" src="img/kids-on-boat.jpg" width="600" height="252" alt="Дети на борту яхты.">
-    </section>
+    </article>
 
     <section class="rent">
-      <h2 class="rent-title title-decoration">Аренда яхты</h2>
+      <header class="rent-header">
+        <h2 class="rent-title title-decoration">Аренда яхты</h2>
+        <ul class="card-view-buttons">
+          <li class="card-view-item">
+            <button class="card-view-button-grid active" type="button">
+              <span class="visually-hidden">Плитка</span>
+            </button>
+          </li>
+          <li class="card-view-item">
+            <button class="card-view-button-list" type="button">
+              <span class="visually-hidden">Список</span>
+            </button>
+          </li>
+        </ul>
+      </header>
       <ul class="rent-list">
         <li class="rent-item">
-          <a class="rent-anchor" href="#no_scroll">
+          <a class="rent-link" href="#no_scroll">
             <img class="rent-image" src="img/rent-1.jpg" width="310" height="141" alt="Катер Meridian 401">
           </a>
+          <div class="rent-content">
           <a class="rent-link" href="#no_scroll">
             <h3 class="item-title">Катер Meridian 401</h3>
           </a>
@@ -99,15 +143,17 @@
             <li class="amenities-item">холодильник, микроволновка</li>
             <li class="amenities-item">душ, туалет</li>
           </ul>
+        </div>
           <p class="rent-price">
-            <span>Цена:</span>
-            <span>14 000 ₽/час</span>
+            <span class="rent-price-name">Цена:</span>
+            <span class="rent-price-value">14 000 ₽/час</span>
           </p>
         </li>
         <li class="rent-item">
-          <a class="rent-anchor" href="#no_scroll">
+          <a class="rent-link" href="#no_scroll">
             <img class="rent-image" src="img/rent-2.jpg" width="310" height="141" alt="Катер 60 Manhattan">
           </a>
+          <div class="rent-content">
           <a class="rent-link" href="#no_scroll">
             <h3 class="item-title">Катер 60 Manhattan</h3>
           </a>
@@ -119,15 +165,17 @@
             <li class="amenities-item">оборудованная кухня</li>
             <li class="amenities-item">джакузи</li>
           </ul>
+        </div>
           <p class="rent-price">
-            <span>Цена:</span>
-            <span>25 000 ₽/час</span>
+            <span class="rent-price-name">Цена:</span>
+            <span class="rent-price-value">25 000 ₽/час</span>
           </p>
         </li>
         <li class="rent-item">
-          <a class="rent-anchor" href="#no_scroll">
+          <a class="rent-link" href="#no_scroll">
             <img class="rent-image" src="img/rent-3.jpg" width="310" height="141" alt="Катер Starfisher 34">
           </a>
+          <div class="rent-content">
           <a class="rent-link" href="#no_scroll">
             <h3 class="item-title">Катер Starfisher 34</h3>
           </a>
@@ -139,15 +187,17 @@
             <li class="amenities-item">холодильник, микроволновка</li>
             <li class="amenities-item">душ, туалет</li>
           </ul>
+        </div>
           <p class="rent-price">
-            <span>Цена:</span>
-            <span>18 000 ₽/час</span>
+            <span class="rent-price-name">Цена:</span>
+            <span class="rent-price-value">18 000 ₽/час</span>
           </p>
         </li>
         <li class="rent-item">
-          <a class="rent-anchor" href="#no_scroll">
+          <a class="rent-link" href="#no_scroll">
             <img class="rent-image" src="img/rent-4.jpg" width="310" height="141" alt="Катер Pacific 7-13">
           </a>
+          <div class="rent-content">
           <a class="rent-link" href="#no_scroll">
             <h3 class="item-title">Катер Pacific 7-13</h3>
           </a>
@@ -159,15 +209,17 @@
             <li class="amenities-item">холодильник, микроволновка</li>
             <li class="amenities-item">туалет</li>
           </ul>
+        </div>
           <p class="rent-price">
-            <span>Цена:</span>
-            <span>11 000 ₽/час</span>
+            <span class="rent-price-name">Цена:</span>
+            <span class="rent-price-value">11 000 ₽/час</span>
           </p>
         </li>
         <li class="rent-item">
-          <a class="rent-anchor" href="#no_scroll">
+          <a class="rent-link" href="#no_scroll">
             <img class="rent-image" src="img/rent-5.jpg" width="310" height="141" alt="">
           </a>
+          <div class="rent-content">
           <a class="rent-link" href="#no_scroll">
             <h3 class="item-title">Катер Atlantic 3000</h3>
           </a>
@@ -180,9 +232,10 @@
             <li class="amenities-item">оборудованная кухня</li>
             <li class="amenities-item">душ, туалет</li>
           </ul>
+        </div>
           <p class="rent-price">
-            <span>Цена:</span>
-            <span>15 000 ₽/час</span>
+            <span class="rent-price-name">Цена:</span>
+            <span class="rent-price-value">15 000 ₽/час</span>
           </p>
         </li>
       </ul>
@@ -191,26 +244,26 @@
     <section class="gallery">
       <h2 class="gallery-title title-decoration">Галерея</h2>
       <div class="gallery-slider">
-        <img class="gallery-image" src="img/gallery-1.jpg" width="970" height="690" alt="Парусная лодка в море вблизи островов.">
+        <img class="gallery-image" src="img/gallery-photo-4.jpg" width="970" height="690" alt="Парусная лодка в море вблизи островов.">
         <ul class="gallery-list">
           <li class="gallery-item">
-            <a class="gallery-anchor gallery-haze" href="#no_scroll">
-              <img class="gallery-image" src="img/gallery-2.jpg" width="170" height="150" alt="Парусная лодка вблизи пляжа.">
+            <a class="gallery-link" href="img/gallery-photo-1.jpg">
+              <img class="gallery-image" src="img/preview-gallery-photo-1.jpg" width="170" height="150" alt="Парусная лодка вблизи пляжа.">
             </a>
           </li>
           <li class="gallery-item">
-            <a class="gallery-anchor gallery-haze" href="#no_scroll">
-              <img class="gallery-image" src="img/gallery-3.jpg" width="170" height="150" alt="Вид на нос парусной лодки.">
+            <a class="gallery-link" href="img/gallery-photo-2.jpg">
+              <img class="gallery-image" src="img/preview-gallery-photo-2.jpg" width="170" height="150" alt="Вид на нос парусной лодки.">
             </a>
           </li>
           <li class="gallery-item">
-            <a class="gallery-anchor gallery-haze" href="#no_scroll">
-              <img class="gallery-image" src="img/gallery-4.jpg" width="170" height="150" alt="Парусная лодка Сила ветра.">
+            <a class="gallery-link" href="img/gallery-photo-3.jpg">
+              <img class="gallery-image" src="img/preview-gallery-photo-3.jpg" width="170" height="150" alt="Парусная лодка Сила ветра.">
             </a>
           </li>
           <li class="gallery-item">
-            <a class="gallery-anchor" href="#no_scroll">
-              <img class="gallery-image" src="img/gallery-5.jpg" width="170" height="150" alt="Парусная лодка в море вблизи островов.">
+            <a class="gallery-link active-item" href="img/gallery-photo-4.jpg">
+              <img class="gallery-image" src="img/preview-gallery-photo-4.jpg" width="170" height="150" alt="Парусная лодка в море вблизи островов.">
             </a>
           </li>
         </ul>
@@ -298,7 +351,7 @@
   <footer class="page-footer">
     <div class="page-footer-container">
       <div class="page-footer-column">
-        <a class="footer-logo">
+        <a class="footer-logo-link">
           <img class="footer-logo-image" src="img/logo.svg" width="100" height="106" alt="Логотип яхт-клуба «Под парусом».">
         </a>
         <p class="footer-policy">
@@ -390,6 +443,7 @@
       </ul>
     </div>
   </footer>
+  <script src="js/main.js" async></script>
 
 </body>
 

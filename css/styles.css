@@ -29,6 +29,36 @@
     url("../fonts/Roboto-Bold.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: "Philosopher";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Philosopher"),
+    local("Philosopher-Regular"),
+    url("../fonts/Philosopher-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Philosopher";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Philosopher Italic"),
+    local("Philosopher-talic"),
+    url("../fonts/Philosopher-Italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Philosopher";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Philosopher Bold"),
+    local("Philosopher-Bold"),
+    url("../fonts/Philosopher-Bold.woff2") format("woff2");
+}
+
 :root {
   --titan-white: #fdfdfd;
   --dark-blue: #163152;
@@ -59,17 +89,202 @@ a[class$="-link"]:active {
 
 /* Page-header */
 .page-header {
+  margin: 0 0 40px;
+}
+
+.services {
+  padding: 15px 0;
+
+  border-bottom: 1px solid rgba(22, 49, 82, 0.1);
+}
+
+.services-content {
+  display: flex;
+  align-items: center;
   width: 1170px;
-  padding: 20px 55px;
-  margin: 0 auto 40px;
+  margin: 0 auto;
+}
+
+.location {
+  padding: 4px 0 4px 25px;
+  margin-right: auto;
+
+  font-size: 14px;
+  line-height: 14px;
+  color: inherit;
+  text-decoration: none;
+
+  background-image: url("../img/pin.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.location:hover {
+  opacity: 0.5;
+}
+
+.location:active {
+  opacity: 0.3;
+}
+
+.caption {
+  margin: 0 10px 0 0;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.theme-switcher-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 30px 0 0;
+
+  list-style: none;
+}
+
+.theme-switcher-item {
+  margin: 0 10px 0 0;
+}
+
+.theme-switcher-item:last-child {
+  margin: 0;
+}
+
+.theme-button-light {
+  display: block;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+
+  font-family: inherit;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-image: url("../img/sun.svg");
+  border: 1px solid var(--emerald);
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.theme-button-light:hover {
+  opacity: 0.5;
+}
+
+.theme-button-light:active {
+  opacity: 0.3;
+}
+
+.theme-button-light.active {
+  background-image: url("../img/sun-light.svg");
+}
+
+.theme-button-dark {
+  display: block;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+
+  font-family: inherit;
+
+  background-image: url("../img/moon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: 1px solid var(--emerald);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.theme-button-dark:hover {
+  opacity: 0.5;
+}
+
+.theme-button-dark:active {
+  opacity: 0.3;
+}
+
+.theme-button-dark.active {
+  background-image: url("../img/moon-light.svg");
+}
+
+.fonts-list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fonts-item {
+  margin-right: 10px;
+}
+
+.fonts-item:last-child {
+  margin-right: 0;
+}
+
+.font-button-sans-serif {
+  display: block;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+
+  font-size: 16px;
+  line-height: 14px;
+  background-color: transparent;
+  border: 1px solid var(--emerald);
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.font-button-sans-serif:hover {
+  opacity: 0.5;
+}
+
+.font-button-sans-serif:active {
+  opacity: 0.3;
+}
+
+.font-button-serif {
+  display: block;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+
+  font-family: "Philosopher", serif;
+  font-size: 16px;
+  line-height: 14px;
+  background-color: transparent;
+  border: 1px solid var(--emerald);
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.font-button-serif:hover {
+  opacity: 0.5;
+}
+
+.font-button-serif:active {
+  opacity: 0.3;
 }
 
 .header-navigation {
   display: flex;
   align-items: center;
+  padding: 20px 0;
+  margin: 0 auto;
+  width: 1170px;
 }
 
-.header-logo {
+.header-logo-link {
   display: block;
   width: 64px;
   height: 68px;
@@ -141,6 +356,10 @@ a[class$="-link"]:active {
   margin: 0 auto;
 }
 
+.blog-column {
+  width: 400px;
+}
+
 .blog-title {
   margin: 0 0 35px;
 
@@ -167,16 +386,118 @@ a[class$="-link"]:active {
   text-align: right;
 }
 
+.button-more {
+  padding: 0;
+
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  color: inherit;
+
+  text-decoration-line: underline;
+  background-color: transparent;
+  border: none;
+}
+
+.button-more:hover {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.button-more:active {
+  text-decoration: none;
+  opacity: 0.3;
+}
+
+/* Short display of the article */
+
+.blog.short .blog-description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 /* Rent section */
 .rent {
   margin-bottom: 120px;
 }
 
-.rent-title {
+.rent-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 0 0 55px;
+}
+
+.rent-title {
+  margin: 0;
 
   font-size: 24px;
   line-height: 34px;
+}
+
+.card-view-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+  max-width: 800px;
+
+  list-style: none;
+}
+
+.card-view-button-grid {
+  width: 40px;
+  height: 40px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-image: url("../img/grid.svg");
+  border: 1px solid var(--emerald);
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.card-view-button-grid:hover {
+  opacity: 0.5;
+}
+
+.card-view-button-grid:active {
+  opacity: 0.3;
+}
+
+.card-view-button-grid.active {
+  background-image: url("../img/grid-light.svg");
+}
+
+.card-view-button-list {
+  width: 40px;
+  height: 40px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-image: url("../img/list.svg");
+  border: 1px solid var(--emerald);
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.card-view-button-list:hover {
+  opacity: 0.5;
+}
+
+.card-view-button-list:active {
+  opacity: 0.3;
+}
+
+.card-view-button-list.active {
+  background-image: url("../img/list-light.svg");
 }
 
 .rent-list {
@@ -206,14 +527,13 @@ a[class$="-link"]:active {
 
 .rent-link {
   display: inline-block;
-  margin: 0 0 18px;
 
   color: inherit;
   text-decoration: none;
 }
 
 .item-title {
-  margin: 0;
+  margin: 0 0 18px;
 
   font-weight: 700;
   font-size: 20px;
@@ -270,6 +590,48 @@ a[class$="-link"]:active {
   line-height: 21px;
 }
 
+/* Vertical card layout in a list */
+
+.rent-list.list {
+  flex-direction: column;
+}
+
+.rent-list.list .rent-item {
+  display: flex;
+  width: 1110px;
+}
+
+.rent-list.list .rent-image {
+  width: 340px;
+  height: 211px;
+  margin: 0;
+  margin-right: 30px;
+  object-fit: cover;
+}
+
+.rent-list.list .item-title {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.rent-list.list .amenities-list {
+  margin: 0;
+  margin-left: 18px;
+}
+
+.rent-list.list .rent-content {
+  margin-right: auto;
+  max-width: 345px;
+}
+
+.rent-list.list .rent-price {
+  margin: 0;
+}
+
+.rent-list.list .rent-price-name {
+  display: none;
+}
+
 /* Gallery section */
 .gallery {
   width: 1170px;
@@ -294,11 +656,13 @@ a[class$="-link"]:active {
   display: block;
 }
 
-.gallery-haze {
+.gallery-link {
   position: relative;
+
+  display: block;
 }
 
-.gallery-haze::before {
+.gallery-link::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -310,6 +674,10 @@ a[class$="-link"]:active {
   opacity: 0.5;
 
   content: "";
+}
+
+.gallery-link.active-item::before {
+  background-color: transparent;
 }
 
 .gallery-list {
@@ -437,6 +805,8 @@ a[class$="-link"]:active {
   width: 60px;
   height: 60px;
   margin-right: 15px;
+
+  border-radius: 50%;
 }
 
 .post-meta {
@@ -510,7 +880,12 @@ a[class$="-link"]:active {
 
 .contacts-item,
 .contacts-subtitle,
-.contacts-social-subtitle,
+.contacts-social-subtitle {
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: none;
+}
+
 .contacts-desription-link {
   font-size: 16px;
   line-height: 22px;
@@ -549,7 +924,7 @@ a[class$="-link"]:active {
   border-top: 1px solid rgba(22, 49, 82, 0.1);
 }
 
-.footer-logo {
+.footer-logo-link {
   display: block;
   width: 100;
   height: 106;
@@ -574,13 +949,17 @@ a[class$="-link"]:active {
   margin-right: 125px;
 }
 
-.footer-policy,
-.footer-policy-link,
-.footer-copyright {
+.footer-policy-link {
   font-size: 10px;
   line-height: 12px;
   text-decoration: none;
   color: var(--dark-blue);
+}
+
+.footer-policy,
+.footer-copyright {
+  font-size: 10px;
+  line-height: 12px;
 }
 
 .footer-policy {
@@ -627,7 +1006,7 @@ a[class$="-link"]:active {
   color: var(--dark-blue);
 }
 
-/* Helper classed */
+/* Helper classes */
 .title-decoration {
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -635,4 +1014,90 @@ a[class$="-link"]:active {
   text-decoration-color: var(--emerald);
   text-decoration-thickness: 2px;
   text-underline-offset: 15px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Active button */
+
+.active {
+  background-color: #00c6bd;
+  color: #fdfdff;
+}
+
+/* Theme: serif font */
+
+.page.serif {
+  font-family: "Philosopher", serif;
+}
+
+/* Theme: dark */
+
+.page.dark {
+  color: #fdfdff;
+  background-color: #1d1f1f;
+}
+
+.page.dark .font-button-sans-serif {
+  color: #fdfdff;
+}
+
+.page.dark .font-button-serif {
+  color: #fdfdff;
+}
+
+.page.dark .theme-button-light {
+  background-image: url("../img/sun-light.svg");
+}
+
+.page.dark .footer-logo-image,
+.page.dark .header-logo-image,
+.page.dark .navigation-account-image,
+.page.dark .post-share-image,
+.page.dark .contacts-social-image {
+  filter: brightness(20);
+}
+
+.page.dark a {
+  color: #fdfdff;
+}
+
+.page.dark a:hover {
+  opacity: 0.5;
+}
+
+.page.dark a:active {
+  opacity: 0.3;
+}
+
+.page.dark .card-view-button-grid {
+  background-image: url("../img/grid-light.svg");
+}
+
+.page.dark .card-view-button-list {
+  background-image: url("../img/list-light.svg");
+}
+
+.page.dark .rent-item {
+  box-shadow: 0 4px 30px #181a1a;
+}
+
+.page.dark .post-date {
+  color: rgba(253, 253, 255, 0.5);
+}
+
+.page.dark .amenities-item::before,
+.page.dark .post-item::before {
+  background-color: #fdfdff;
 }

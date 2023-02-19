@@ -5,5 +5,5 @@ lint:
 	npx stylelint ./css/*.css
 	npx linthtml ./*.html
 
-deploy:
+# deploy:
 	# npx surge --project ./src --domain
