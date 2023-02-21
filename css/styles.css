@@ -235,6 +235,7 @@ a[class$="-link"]:active {
   height: 32px;
   padding: 0;
 
+  font-family: inherit;
   font-size: 16px;
   line-height: 14px;
   background-color: transparent;
@@ -445,12 +446,15 @@ a[class$="-link"]:active {
   margin: 0;
   max-width: 800px;
 
+  font-family: inherit;
   list-style: none;
 }
 
 .card-view-button-grid {
   width: 40px;
   height: 40px;
+
+  font-family: inherit;
 
   background-position: center;
   background-repeat: no-repeat;
@@ -477,6 +481,8 @@ a[class$="-link"]:active {
 .card-view-button-list {
   width: 40px;
   height: 40px;
+
+  font-family: inherit;
 
   background-position: center;
   background-repeat: no-repeat;
